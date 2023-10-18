@@ -1,0 +1,837 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+body{
+    height: 4000px;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 60;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 50;
+}
+img{
+    float: left;
+    margin-left: 50;
+}
+.list{
+list-style: none;
+float: right;
+margin-right: 70;
+margin-top: 20;
+}
+.list li{
+    display: inline-block;
+color: antiquewhite;
+font-size: 20;
+margin-left: 33;
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+}
+.list li a:hover{
+    color: rgb(251, 17, 17);
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.cover{
+    background-image: url(img/cover.jpg);
+ width: 100%;
+ height: 100vh;
+ position: relative;
+}  
+.overley{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    background-color: rgba(28, 28, 28, 0.7);
+}
+.content{
+width: 60%;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.title1{
+    color: aliceblue;
+    font-size: 65;
+}
+.p1{
+    color: rgb(214, 154, 154);
+    margin: 20px 0px ;
+    font-size: 18;
+    letter-spacing: 5; 
+}
+.btn{
+    width: 180px;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    font-size: 25;
+    margin-right: 15;
+    font-weight: 700;
+}
+.btn2{
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+.btn1:hover{
+background-color: rgb(109, 109, 109);
+color:red}
+.btn2:hover{
+    background-color: rgb(124, 29, 29);
+color:black}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.title2{
+    text-align: center;
+    font-size: 50;
+    margin-top: 100;
+    color: rgb(88, 6, 6);
+}
+.line1{
+    width: 200;
+    height: 5;
+    background-color: rgb(231, 94, 94);
+    margin:auto ;
+    margin-top: 10;
+}
+
+.welcome{
+    width: 85%;
+    margin: auto;
+    overflow: auto;}
+.wel{
+    width: 30%;
+    height: 230;
+    border: 2px solid rgb(144, 15, 15);
+    float: left;
+    margin-top: 80;
+    text-align: center;
+    padding: 20;
+    position: relative;
+    z-index: 1;
+}
+.w2{
+    margin: 80px 5%;
+}
+.wel i{
+    font-size: 40;
+    margin-bottom: 15;
+    color: rgb(231, 94, 94);
+}
+.wel h2{
+    font-size: 30;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15;
+    color: rgb(144, 15, 15);
+}
+.wel p{
+    font-size: 12;
+    letter-spacing: 4;
+    font-weight: 200;
+    margin-bottom: 15;
+    color: rgb(54, 53, 53);
+}
+.wel a{
+    font-size: 20;
+    text-decoration: none;  
+    color: rgb(255, 0, 0);
+}
+.wel::after{
+    position:absolute;
+    content: "";
+    width:0;
+    height:0;
+    top:0;
+    left:0;
+    background-color: rgb(30, 0, 0);
+    opacity:0;
+    transition: 0.5s;
+    z-index: -1;
+}
+.wel:hover::after{
+    width:100%;
+    height:100%;
+    opacity:0.7;
+}
+.wel:hover h2{
+    font-size: 33;
+    color:aliceblue;
+}
+.wel:hover i{
+    font-size: 50;
+    color: aliceblue;
+}
+.wel:hover p{
+color: aliceblue;
+}
+
+/* ...................................................................................................................................... */
+
+.featured{
+    margin: auto;
+    width: 85%;
+    overflow: auto;
+    height: 1300;
+}
+.title3{
+    text-align: center;
+    font-size: 50;
+    color: rgb(88, 6, 6);
+    margin-top: 250;
+}
+.line2{
+    width: 200;
+    height: 5;
+    background-color: rgb(213, 5, 5);
+    margin:auto ;
+    margin-top: 15;
+}
+.program{
+    width:30%;
+    height: 370;
+    margin-top: 60;
+    margin-right: 40;
+    padding: 10px 12px;
+    text-align: center;
+    float: left;
+}
+.programlogo{
+    position: relative;
+}
+.programlogo img{
+    margin: auto;
+    width: 350;     
+    height: 350;
+}
+.programoverley{
+    position: absolute;
+    top: -25;
+    left: -25;
+    width: 400;
+    height: 400;
+    background-color: rgba(165, 52, 52, 0.677);
+    padding: 120;
+    line-height: 50px;
+    opacity: 0;
+    text-align: center;
+}
+.programoverley span{
+    color: white;
+    font-weight: 200;
+    font-size: 15;
+}
+.programoverley h2{
+    color: white;
+    font-weight: 800;
+    font-size: 35;
+}
+.programoverley i{
+    font-size: 30;
+    border-radius: 6px;
+    outline: 2px solid black;
+    outline-offset: 1px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-right: 5;
+}
+.programlogo:hover .programoverley{
+    transition: 1.5s;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.whychoose{
+width: 100%;
+height: 600;
+background-color: #ffdfdf;
+padding-left: 120;
+padding-top: 20;
+position: relative;
+overflow: auto;}
+.title4{
+    font-size: 50;
+    color: rgb(0, 0, 0);
+    margin-top: 75;
+}
+.line3{
+    width: 150;
+    height: 5;
+    background-color: rgb(213, 5, 5);
+    margin-top: 15;
+    margin-bottom: 25;
+}
+.whychoose p{
+    width: 700;
+    color: rgb(88, 88, 88);
+    line-height: 1.5;
+    margin-bottom: 20;
+}
+.whychoose i{
+    color: red;
+    font-size: 27;
+    margin-right: 15;
+}
+.whychoose span{
+    color: rgb(0, 0, 0);
+    font-size: 20;
+    font-weight: 600;
+    line-height: 2.2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.whychoose img{
+    position: absolute;
+    top: 100;
+    right: 40;
+}
+.whychoose li{
+    float: left;
+    margin-right: 22;
+    font-size: 30;
+}
+.whychoose ul{
+    position: absolute;
+    right: 240;
+    bottom: 65;
+}
+.li1{
+    color: red;
+}
+.whychoose li:hover{
+    color: red;
+} 
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.title5{
+    text-align: center;
+    font-size: 50;
+    color: rgb(88, 6, 6);
+    margin-top: 75;
+}
+.line4{
+    width: 200;
+    height: 5;
+    background-color: rgb(213, 5, 5);
+    margin:auto ;
+    margin-top: 15;
+}
+.offer{
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+.offer1{
+    width: 30%;
+    height: 200;
+    margin-top: 70;
+    /* background-color: red; */
+    border: 2px solid rgb(129, 32, 32);
+    padding: 18;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.off2{
+    margin-left:  5%;
+    margin-right: 5%;
+}
+.offer1 i{
+    font-size: 30;
+    color: rgb(218, 11, 11);
+    margin-right: 15;
+}
+.offer1 h2{
+    font-size: 25;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline;
+    /* font: normal 200 25px ;    */
+}
+.offer1 span{
+    display: block;
+    margin-top: 16;
+    letter-spacing: 2;
+    text-transform: capitalize;
+    color: grey;
+    font: normal 200 18px 'Times New Roman', Times, serif;
+}
+.offer1::after{
+    position:absolute;
+    content: "";
+    width:0;
+    height:0;
+    top:0;
+    left:0;
+    background-color: rgb(53, 53, 53);
+    opacity:0;
+    transition: 0.5s;
+    z-index: -1;
+}
+.offer1:hover::after{
+    width:100%;
+    height:100%;
+    opacity:0.7;
+}
+.offer1:hover h2{
+    color:aliceblue;
+}
+.offer1:hover i{
+    font-size: 40;
+    color: #f09494;
+}
+.offer1:hover span{
+color: rgb(252, 195, 195);
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.background1{
+    margin-top: 200;
+    width: 100%;
+    height: 300;
+    background-image: url(img/adobe-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: auto;
+}
+.overley1{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    background-color: rgba(28, 28, 28, 0.8);
+}
+.back1{
+    width: 15%;
+    height: 150;
+    float: left;
+    margin-top: 75;
+    margin-left: 8%;
+    text-align: center;
+}
+.back1 i{
+    color: rgb(239, 36, 36);
+    font-size: 45;
+    margin-bottom: 5;
+}
+.back1 h2{
+    font-size: 40;
+    color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.back1 span{
+    font-size: 18;
+    color: azure;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.title6{
+    text-align: center;
+    font-size: 40;
+    color: rgb(88, 6, 6);
+    margin-top: 75;
+}
+.line5{
+    width: 140;
+    height: 5;
+    background-color: rgb(213, 5, 5);
+    margin:auto ;
+    margin-top: 15;
+    margin-bottom: 25;
+}
+.pricing{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.pricing1{
+    width:30%;
+    height: 470;
+    border: 2px solid rgb(213, 5, 5) ;
+    text-align: center;
+    float: left;
+    margin: 30px 19px;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+
+}
+.pricing h3{
+    font: normal 400 42px  Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20;
+}
+.pricing .circle1{
+    width: 180px;
+    height: 180px;
+    border: 4px solid rgb(0, 0, 0)  ;
+    border-radius: 50%;
+    margin: auto ;
+    padding: 38px;
+}
+.pricing .price1{
+    font: normal 900 50px  Georgia, 'Times New Roman', Times, serif;
+    color: rgb(126, 5, 5) ;
+}
+.pricing .month{
+    font-size: 15;
+}
+.pricing .b1{
+    font:normal 400 25px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    line-height: 40px;
+    color: rgb(117, 110, 110);
+ }
+.pricing button{
+        background-color:white ;
+        width: 200px;
+        height: 40;
+        border: 3px dashed rgb(180, 7, 7);
+        color: rgb(0, 0, 0);
+        margin-top: 10;
+}
+.pricing button:hover{
+    background-color:white ;
+    width: 220px;
+    height: 60;
+    border: 4px solid red;
+    color: red;
+    font-size: larger;
+}
+.pricing1::after{
+    position:absolute;
+    content: "";
+    width:100%;
+    height:0;
+    top:0;
+    left:0;
+    background-color:rgb(30, 0, 0);
+    opacity:0;
+    transition: 1.5s;
+    z-index: -1;
+}
+.pricing1:hover::after{
+    width:100%;
+    height:50%;
+    opacity:0.6;
+}
+.pricing1::before{
+    position:absolute;
+    content: "";
+    width:100%;
+    height:0;
+    bottom: 0;
+    left:0;
+    background-color: rgb(30, 0, 0);
+    opacity:0;
+    transition: 1s;
+    z-index: -1;
+}
+.pricing1:hover::before{
+    width:100%;
+    height:50%;
+    opacity:0.6 ;
+}
+.pricing1:hover .price1{
+    transition: 1s;
+    color:  rgb(255, 255, 255) ;
+}
+.pricing1:hover h3{
+    transition: 1s;
+    color:  rgb(255, 255, 255) ;
+}
+.pricing1:hover .b1{
+    transition: 1s;
+    color:  rgb(255, 255, 255) ;
+}
+.pricing1:hover .circle1{
+    transition: 1s;
+    border: 4px solid white;
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.history{
+    margin-top: 200;
+    width: 100%;
+    height: 450;
+    background-image: url(img/wp4144671.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: auto;
+}
+.overley2{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    background-color: rgba(28, 28, 28, 0.8);
+}
+.history1{
+    width: 35%;
+    height: 100;
+    float: left;
+    margin-top: 150;
+    margin-left: 10%;
+}
+.history1 .img1{
+    width: 170;
+    height: 170;
+    border: none;
+    border-radius: 50%;
+    margin-right: 20;
+}
+.history1 .img2{
+    width: 170;
+    height: 170;
+    border: none;
+    border-radius: 50%;
+    margin-right: 20;
+}
+
+.history1 h2{
+    color: white;
+    font-size: 30;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.history1 h3{
+    color: rgb(255, 0, 0);
+    font-size: 15;
+    margin-bottom: 10;
+}
+.history1 span{
+    font-size: 20;
+    color: rgb(255, 255, 255);
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.title7{
+    text-align: center;
+    font-size: 40;
+    color: rgb(88, 6, 6);
+    margin-top: 115;
+}
+.line6{
+    width: 140;
+    height: 5;
+    background-color: rgb(213, 5, 5);
+    margin:auto ;
+    margin-top: 15;
+    margin-bottom: 45;
+}
+.ourteam{
+    width:80% ;
+    height: 500;
+    margin: auto;
+    overflow: auto;
+}
+.teammember{
+    width: 30%;
+    height: 300;
+    text-align: center;
+    padding: 18px 21px;
+    background-color: #f8d4d4;
+    border: 3px solid rgb(84, 0, 0);
+    float: left;
+    margin-left: 3%;
+    position: relative;
+    z-index: 1;
+}
+.teamimg{
+    width: 100%;
+    height: 200;
+    margin: auto;
+    position: relative;
+}
+.teamoverley{
+    position: absolute;
+    top: 0;
+    width: 200;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 3px solid rgb(87, 0, 0);
+    margin-left: 50 ;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.teammember:hover .teamoverley{
+    visibility: visible;
+    opacity: 1;
+}
+.teamoverley a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 33;
+    margin-left: auto ;
+    background-color: red;
+}
+.teamdetail h2{
+    color: rgb(116, 0, 0);
+    margin-bottom: 8;
+}
+.teamdetail span{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+.teammember::after{
+    position:absolute;
+    content: "";
+    width:100%;
+    height:0;
+    top:0;
+    left:0;
+    background-color:rgb(30, 0, 0);
+    opacity:0;
+    transition: 1.5s;
+    z-index: -1;
+}
+.teammember:hover::after{
+    width:100%;
+    height:100%;
+    opacity:0.6;
+}
+.teammember:hover h2{
+    color: whitesmoke;
+}
+.teammember:hover span{
+    color: whitesmoke;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.title8{
+    text-align: center;
+    font-size: 40;
+    color: rgb(88, 6, 6);
+    margin-top: 115;
+}
+.line7{
+    width: 140;
+    height: 5;
+    background-color: rgb(213, 5, 5);
+    margin:auto ;
+    margin-top: 15;
+    margin-bottom: 45;
+}
+.recent{
+    width: 90%;
+    height: 750;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+.new{
+    width: 30%;
+    height:600;
+    background-color: rgb(250, 243, 243);
+    padding: 15;
+    float: left;
+    margin-left: 3%;
+    position: relative;
+    z-index: 1;
+}
+.new img{
+    float: left;
+    margin-left: 2;
+    margin-bottom: 40;
+}
+.new span{
+    margin-right:  12px;
+    font-size: 10;
+}
+.new i{
+    color: red;
+}
+.new h2{
+    margin: 30px 0;
+}
+.new p{
+    font-size: 17;
+    line-height: 2;
+    color: grey;
+    margin-bottom: 30;
+}
+.new a{
+    text-decoration: none;
+    color: rgb(255, 106, 106);
+}
+.new::after{
+    position:absolute;
+    content: "";
+    width:100%;
+    height:0;
+    top:0;
+    left:0;
+    background-color:rgb(69, 69, 69);
+    opacity:0;
+    transition: 0.8s;
+    z-index: -1;
+}
+.new:hover::after{
+    width:100%;
+    height:100%;
+    opacity:0.6;
+}
+.new:hover p{
+    color: white;
+}
+.new:hover h2{
+    color: white;
+}.new:hover span{
+    color: white;
+}
+.new:hover a{
+    font-size: 20;
+    font-weight: 900;
+    color: rgb(110, 0, 0);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.footer{
+    width: 100%;
+    height: 250;
+    background-color: rgba(0, 0, 0,0.8);
+    text-align: center;
+    position: relative;
+    padding: 120;
+}
+.footer img{
+    position: absolute;
+    top: 0;
+    left: 36%;
+}
+.footer a{
+    font-size: 50;
+    color: rgb(248, 109, 109);
+    margin-right: 10    ;
+
+}
+.footer h3{
+    margin-top: 20;
+    font-size: 15;
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+}
+.footer a:hover{
+    color: red;
+}
